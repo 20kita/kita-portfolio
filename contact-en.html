@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kita - Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="app-container">
+        <div class="layout-grid">
+
+            <aside class="sidebar">
+                <div class="mobile-bar">
+    <button class="menu-toggle" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="site-menu"><i class="fa-solid fa-bars"></i></button>
+    <a class="mobile-name" href="index-en.html">Natalia Cieszyńska</a>
+</div>
+                <nav class="side-nav" id="site-menu">
+                    <ul>
+                        <li><a href="index-en.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                        <li><a href="projects-en.html"><i class="fa-solid fa-folder-open"></i> Projects</a></li>
+                        <li><a href="contact-en.html" class="active" aria-current="page"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="sidebar-socials">
+                    <a href="https://github.com/20kita" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/natalia-cieszy%C5%84ska-065638272" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+
+                <footer class="sidebar-footer">
+                    <p>&copy; 2026 Natalia Cieszyńska.</p>
+                </footer>
+            </aside>
+
+            <main class="main-content project-detail-main">
+                <div class="bg-shape shape-1"></div>
+                <div class="bg-shape shape-2"></div>
+
+                <header class="project-fixed-top">
+                    <div class="project-header-text">
+                        <h2>Contact</h2>
+                        <p>Let's talk about collaboration or projects</p>
+                    </div>
+
+                    <div class="project-top-actions">
+                        <a href="contact.html" class="icon-btn" hreflang="pl" aria-label="Wersja polska">PL</a>
+                        <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle theme">
+                            <i class="fa-solid fa-moon"></i>
+                        </button>
+                    </div>
+                </header>
+
+                <div class="project-scroll-container">
+                    <div class="project-content-body">
+
+                        <div class="project-description-card contact-card-box">
+                            <h3>Write to me</h3>
+                            <p class="contact-intro-text">Do you have questions, a project proposal, or want to initiate collaboration? Please fill out the form below.</p>
+
+                            <form id="contactForm" action="https://formspree.io/f/xljglooe" method="POST" class="contact-form" novalidate>
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" name="name" autocomplete="name" required placeholder="Enter your name...">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Your Email Address</label>
+                                    <input type="email" id="email" name="email" autocomplete="email" required placeholder="name@example.com">
+                                    <small id="emailError" class="error-msg" role="alert" hidden>Please enter a valid email address.</small>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" rows="5" required placeholder="Your message (min. 20 characters)..."></textarea>
+                                    <small id="messageError" class="error-msg" role="alert" hidden>Message must be at least 20 characters long.</small>
+                                </div>
+
+                                <button type="submit" class="cta-button contact-submit-btn">
+                                    <i class="fa-solid fa-paper-plane"></i> Send message
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </main>
+
+        </div>
+    </div>
+
+    <div id="successPopup" class="success-popup" role="dialog" aria-modal="true" aria-labelledby="popupTitle" hidden>
+        <div class="popup-content">
+            <i class="fa-solid fa-circle-check popup-icon" aria-hidden="true"></i>
+            <h3 id="popupTitle">Message sent!</h3>
+            <p>Thank you for contacting me. I will respond as soon as possible.</p>
+            <button id="closePopupBtn" class="cta-button" type="button">OK</button>
+        </div>
+    </div>
+
+</body>
+</html>

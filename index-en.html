@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kita - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="app-container">   
+        <div class="layout-grid">
+           <aside class="sidebar">
+                <div class="profile-area">
+                    <div class="profile-img-placeholder">
+                        <img src="profile-photo.jpg" alt="My photo" class="profile-pic">
+                    </div>
+                </div>
+               <div class="mobile-bar">
+    <button class="menu-toggle" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="site-menu"><i class="fa-solid fa-bars"></i></button>
+    <a class="mobile-name" href="index-en.html">Natalia Cieszyńska</a>
+</div>
+                <nav class="side-nav" id="site-menu">
+                    <ul>
+                        <li><a href="index-en.html" class="active" aria-current="page"><i class="fa-solid fa-house"></i> Home</a></li>
+                        <li><a href="projects-en.html"><i class="fa-solid fa-folder-open"></i> Projects</a></li>
+                        <li><a href="contact-en.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="sidebar-socials">
+                    <a href="https://github.com/20kita" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/natalia-cieszyńska-065638272" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <footer class="sidebar-footer">
+                    <p>&copy; 2026 Natalia Cieszyńska.</p>
+                </footer>
+            </aside>
+
+            <main class="main-content"> 
+                <div class="bg-shape shape-1"></div>
+                <div class="bg-shape shape-2"></div>
+
+                <div class="top-nav-action">
+                    <a href="index.html" class="icon-btn" hreflang="en" aria-label="Polish version">PL</a>
+                     <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle theme">
+                    <i class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+
+                <div class="hero-content-wrapper">
+                    <p class="subtitle">Toruń, Poland</p>
+                    <div class="hero-code-style">
+                        <h1 class="hero-code-style">
+                        <span class="code-line"><span class="line-num" aria-hidden="true">01</span>&lt;<span class="highlight">Natalia Cieszyńska</span>&gt;</span>
+                        <span class="code-line"><span class="line-num" aria-hidden="true">02</span>&lt;I design websites and analyze</span>
+                        <span class="code-line"><span class="line-num" aria-hidden="true">03</span>data in <span class="highlight-alt">SQL</span>.&gt;</span>
+                    </h1>
+                    </div>
+                    
+                </div>
+
+                <div class="bottom-nav-action">
+                    <a href="contact-en.html" class="cta-button">Contact me <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
