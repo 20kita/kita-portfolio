@@ -750,6 +750,7 @@ body.dark-theme .tag {
     .app-container { position: relative; }
 
     .mobile-bar {
+        position: relative;
         order: 1; flex-shrink: 0; height: 64px;
         display: flex; align-items: center; gap: 14px; padding: 0 16px;
         background-color: var(--sidebar-bg);
@@ -762,6 +763,17 @@ body.dark-theme .tag {
         border-radius: 12px; color: var(--primary-color);
         font-size: 1.1rem; cursor: pointer;
     }
+
+    .mobile-logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);   /* dead centre of the bar */
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+    }
+    .mobile-logo svg { width: 39px; height: 34px; display: block; color: var(--text-dark); }
     .menu-toggle:hover { background-color: var(--primary-color); color: var(--surface); }
 
     .mobile-name {
@@ -817,13 +829,14 @@ body.dark-theme .tag {
 
     .main-content.project-detail-main { padding: 0; }
     .project-fixed-top { flex-wrap: nowrap; align-items: flex-start; gap: 12px; padding: 16px 16px 12px; }
-.project-header-text { flex: 1; min-width: 0; }
-.project-header-text h2 { font-size: 1.2rem; }
-.project-top-actions { margin-left: auto; }   /* back button: always top-right */
+    .project-header-text { flex: 1; min-width: 0; }
+    .project-header-text h2 { font-size: 1.2rem; }
+    .project-top-actions { margin-left: auto; }   /* back button: always top-right */
     .project-scroll-container { padding: 0 16px 24px; }
     .hero-code-style { font-size: 1.1rem; }
     .code-line { flex-wrap: nowrap; align-items: baseline; gap: 8px; }
     .line-num { margin-right: 4px; font-size: 0.9rem; }
+
 }
 @media (min-width: 769px) {
     .sidebar { position: relative; justify-content: center; }
