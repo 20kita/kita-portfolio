@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Trees - Projekt</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="app-container">
+        <div class="layout-grid">
+
+            <aside class="sidebar">
+                <div class="mobile-bar">
+    <button class="menu-toggle" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="site-menu"><i class="fa-solid fa-bars"></i></button>
+    <a class="mobile-logo" href="index.html" aria-label="Natalia Cieszyńska – strona główna"></a>
+</div>
+                <nav class="side-nav" id="site-menu">
+                    <ul>
+                        <li><a href="index.html"><i class="fa-solid fa-house"></i> Strona główna</a></li>
+                        <li><a href="projects.html" class="active" aria-current="page"><i class="fa-solid fa-folder-open"></i> Projekty</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Kontakt</a></li>
+                    </ul>
+                </nav>
+
+                <div class="sidebar-socials">
+                    <a href="https://github.com/20kita" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/natalia-cieszy%C5%84ska-065638272" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+
+                <footer class="sidebar-footer">
+                    <p>&copy; 2026 Natalia Cieszyńska.</p>
+                </footer>
+            </aside>
+
+            <main class="main-content project-detail-main">
+                <div class="bg-shape shape-1"></div>
+                <div class="bg-shape shape-2"></div>
+
+                <header class="project-fixed-top">
+                    <div class="project-header-text">
+                        <h2>Team Trees - UI/UX Projekt</h2>
+                    </div>
+
+                    <div class="project-top-actions">
+                        <a href="projects.html" class="icon-btn" aria-label="Wróć do projektów" title="Wróć do projektów"><i class="fa-solid fa-arrow-left"></i></a>
+                        <a href="project-teamtrees-en.html" class="icon-btn" hreflang="en" aria-label="English version">EN</a>
+                        <button id="theme-toggle" class="icon-btn" type="button" aria-label="Przełącz motyw">
+                            <i class="fa-solid fa-moon"></i>
+                        </button>
+                    </div>
+                </header>
+
+                <div class="project-scroll-container">
+                    <div class="project-content-body">
+
+                        <div class="project-actions">
+                            <a href="https://www.figma.com/proto/9QhS4nLrChqhjDNQTqxAR1/teamtrees-done?node-id=22-73&starting-point-node-id=22%3A73&t=32BvDhP3F3ANQIvS-1" target="_blank" rel="noopener noreferrer" class="cta-button outline-btn small-btn">
+                                <i class="fa-brands fa-figma"></i> Otwórz w Figmie
+                            </a>
+                            <a href="https://www.figma.com/proto/9QhS4nLrChqhjDNQTqxAR1/teamtrees-done?node-id=22-73&starting-point-node-id=22%3A73&t=32BvDhP3F3ANQIvS-1" target="_blank" rel="noopener noreferrer" class="cta-button small-btn">
+                                <i class="fa-solid fa-external-link"></i> Pełny ekran
+                            </a>
+                        </div>
+
+                        <div class="project-iframe-wrapper">
+                            <iframe src="https://embed.figma.com/proto/9QhS4nLrChqhjDNQTqxAR1/teamtrees-done?node-id=22-73&starting-point-node-id=22%3A73&t=32BvDhP3F3ANQIvS-1&embed-host=share" title="Prototyp Team Trees w Figmie" loading="lazy" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="project-description-card">
+                            <h3>O projekcie</h3>
+                            <p>Jest to autorska wersja i interpretacja istniejącej już platformy proekologicznej <a href="https://teamtrees.org/" target="_blank" rel="noopener noreferrer">teamtrees.org</a>. Projekt w Figmie prezentuje odświeżony layout, dopracowaną hierarchię wizualną oraz przemyślane podejście do interfejsu użytkownika (UI/UX) dla strony o charakterze charytatywnym.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </main>
+
+        </div>
+    </div>
+
+</body>
+</html>

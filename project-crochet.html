@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kita Crochet - Projekt</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="app-container">
+        <div class="layout-grid">
+
+            <aside class="sidebar">
+                <div class="mobile-bar">
+    <button class="menu-toggle" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="site-menu"><i class="fa-solid fa-bars"></i></button>
+    <a class="mobile-logo" href="index.html" aria-label="Natalia Cieszyńska – strona główna"></a>
+</div>
+                <nav class="side-nav" id="site-menu">
+                    <ul>
+                        <li><a href="index.html"><i class="fa-solid fa-house"></i> Strona główna</a></li>
+                        <li><a href="projects.html" class="active" aria-current="page"><i class="fa-solid fa-folder-open"></i> Projekty</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Kontakt</a></li>
+                    </ul>
+                </nav>
+
+                <div class="sidebar-socials">
+                    <a href="https://github.com/20kita" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/natalia-cieszy%C5%84ska-065638272" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+
+                <footer class="sidebar-footer">
+                    <p>&copy; 2026 Natalia Cieszyńska.</p>
+                </footer>
+            </aside>
+
+            <main class="main-content project-detail-main">
+                <div class="bg-shape shape-1"></div>
+                <div class="bg-shape shape-2"></div>
+
+                <header class="project-fixed-top">
+                    <div class="project-header-text">
+                        <h2>Kita Crochet - responsywna strona internetowa</h2>
+                    </div>
+
+                    <div class="project-top-actions">
+                        <a href="projects.html" class="icon-btn" aria-label="Wróć do projektów" title="Wróć do projektów"><i class="fa-solid fa-arrow-left"></i></a>
+                        <a href="project-crochet-en.html" class="icon-btn" hreflang="en" aria-label="English version">EN</a>
+                        <button id="theme-toggle" class="icon-btn" type="button" aria-label="Przełącz motyw">
+                            <i class="fa-solid fa-moon"></i>
+                        </button>
+                    </div>
+                </header>
+
+                <div class="project-scroll-container">
+                    <div class="project-content-body">
+
+                        <div class="project-actions">
+                            <a href="https://github.com/20kita/kitacrochet#readme" target="_blank" rel="noopener noreferrer" class="cta-button outline-btn small-btn">
+                                <i class="fa-solid fa-book-open"></i> Dokumentacja
+                            </a>
+                            <a href="https://20kita.github.io/kitacrochet/" target="_blank" rel="noopener noreferrer" class="cta-button small-btn">
+                                <i class="fa-solid fa-external-link"></i> Pełny ekran
+                            </a>
+                        </div>
+
+                        <div class="project-iframe-wrapper">
+                            <iframe src="https://20kita.github.io/kitacrochet/" title="Podgląd strony Kita Crochet" loading="lazy"></iframe>
+                        </div>
+
+                        <div class="project-description-card">
+                            <h3>O projekcie</h3>
+                            <p>Kita Crochet to responsywna strona internetowa zaprojektowana jako portfolio i galeria dla ręcznie tworzonych maskotek oraz figur amigurumi. Projekt wyróżnia się przyjaznym designem, elegancką prezentacją twórczości od podstaw (w tym postaci z gier takich jak Valorant) oraz spójną identyfikacją wizualną.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </main>
+
+        </div>
+    </div>
+
+</body>
+</html>
