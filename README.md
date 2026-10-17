@@ -20,7 +20,6 @@ The site is available in **Polish** and **English**, and has a **light and dark 
 5. [Features](#features)
 6. [Styling and themes](#styling-and-themes)
 7. [Responsive design](#responsive-design)
-8. [How to add a new project](#how-to-add-a-new-project)
 
 ---
 
