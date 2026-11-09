@@ -1,6 +1,6 @@
 # Kita – Portfolio
 
-My personal portfolio website. It introduces me, shows the projects I've worked on (web, Python, UI/UX and SQL), and has a contact form.
+My personal portfolio website. It introduces me, shows the projects I've worked on (web, Python, UI/UX, a mobile app and SQL), and has a contact form.
 
 The site is available in **Polish** and **English**, and has a **light and dark theme**.
 
@@ -46,12 +46,17 @@ kita-portfolio/
 ├── contact.html / contact-en.html             # Contact form
 ├── project-weather.html / -en.html            # Weather AI Assistant
 ├── project-crochet.html / -en.html            # Kita Crochet
+├── project-strimdle.html / -en.html           # Strimdle (featured)
+├── project-strimdle-figma.html / -en.html     # Strimdle – Figma prototype
+├── project-maze.html / -en.html               # Maze Escape
 ├── project-python-game.html / -en.html        # Snake Game
+├── project-2048.html / -en.html               # 2048 (Android app)
 ├── project-vape.html / -en.html               # Vape MaNiAcY
 ├── project-teamtrees.html / -en.html          # Team Trees
 ├── project-sql.html                           # (empty – planned SQL project page)
 ├── style.css                                  # All styles, shared by every page
 ├── script.js                                  # All scripts, shared by every page
+├── images/2048/                               # 2048 screenshots
 ├── profile-photo.jpg                          # Photo on the home page
 └── K-logo.svg                                 # Logo source file
 ```
@@ -67,7 +72,7 @@ All pages share the same layout: a **sidebar** on the left (navigation, social l
 | Page | What it contains |
 |------|------------------|
 | **Home** (`index.html`) | Profile photo, location (Toruń), and a heading styled like lines of code with line numbers. A button leads to the contact page. |
-| **Projects** (`projects.html`) | Cards for each project, with a short description and a technology tag. Clicking a card opens that project's page. |
+| **Projects** (`projects.html`) | A big featured card for my latest project (Strimdle), then sections with cards: **Figma (UI/UX)**, **Python**, **Websites**, **Mobile apps** and **Databases**. Each card has a short description and a technology tag. Clicking a card opens that project's page. |
 | **Project pages** (`project-*.html`) | A live preview of the project in an `<iframe>`, buttons for **Documentation** or **Source code** (GitHub repo or Figma) and **Full screen**, and an "About the project" description. A back arrow returns to the project list. |
 | **Contact** (`contact.html`) | A form with name, e-mail and message, sent through Formspree. A pop-up confirms that the message was sent. |
 
@@ -77,11 +82,15 @@ All pages share the same layout: a **sidebar** on the left (navigation, social l
 
 | Project | Type | Technologies | Links |
 |---------|------|--------------|-------|
+| **Strimdle** ⭐ | My own quiz website about Polish streamers: guess who said the quote, then watch the clip. Daily and weekly challenges, leaderboard, rooms for playing with friends, quotes added by players | Supabase, Cloudflare Pages; designed in Figma | [Live](https://strimdle.pages.dev/) (code is private) |
+| **Strimdle – design** | Clickable prototype of Strimdle, mobile and desktop versions | Figma | Figma prototypes (embedded on the page) |
 | **Weather AI Assistant** | Chatbot web app that shows the current weather and suggests what to wear | JavaScript, OpenWeather API | [Repo](https://github.com/20kita/weather-chatbot) · [Live](https://20kita.github.io/weather-chatbot/) |
 | **Kita Crochet** | Responsive one-page website for a crochet brand | HTML, CSS (Flexbox, Grid) | [Repo](https://github.com/20kita/kitacrochet) · [Live](https://20kita.github.io/kitacrochet/) |
-| **Snake Game** | Arcade game with a start menu, three difficulty levels and a saved high score; written in Python first, then rewritten in JavaScript to run instantly in the browser (also on phones) | Python (pygame), JavaScript (HTML Canvas) | [Repo](https://github.com/20kita/snake-python) · [Live](https://20kita.github.io/snake-python/) |
+| **Maze Escape** | Maze game with a boss that chases you, checkpoints, a timer and a saved best time; written in Python first, then rewritten in JavaScript | Python (pygame), JavaScript (HTML Canvas) | [Repo](https://github.com/20kita/maze-game) · [Live](https://20kita.github.io/maze-game/) |
+| **Snake Game** | Arcade game with a start menu, three difficulty levels and a saved high score; written in Python first, then rewritten in JavaScript to run instantly in the browser (also on phones) | Python (pygame), JavaScript (HTML Canvas) | [Repo](https://github.com/20kita/snake-game) · [Live](https://20kita.github.io/snake-game/) |
 | **Vape MaNiAcY** | UI/UX storyboard and prototype of a catalogue app | Figma | Figma prototype (embedded on the page) |
 | **Team Trees** | UI/UX interface design and interactive prototype | Figma | Figma prototype (embedded on the page) |
+| **2048** | Mobile puzzle game with Animals, Fruits and Classic modes, unlockable themes and missions | HTML, CSS, JavaScript, Capacitor (Android) | [Repo](https://github.com/20kita/game-2048) · screenshots on the page |
 | **SQL Databases** | Scripts, T-SQL queries, JOINs and subqueries | MS SQL Server | Card only, no page yet |
 
 ---
