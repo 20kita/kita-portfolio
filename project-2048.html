@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 - Projekt</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="app-container">
+        <div class="layout-grid">
+
+            <aside class="sidebar">
+                <div class="mobile-bar">
+    <button class="menu-toggle" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="site-menu"><i class="fa-solid fa-bars"></i></button>
+    <a class="mobile-logo" href="index.html" aria-label="Natalia Cieszyńska – strona główna"></a>
+</div>
+                <nav class="side-nav" id="site-menu">
+                    <ul>
+                        <li><a href="index.html"><i class="fa-solid fa-house"></i> Strona główna</a></li>
+                        <li><a href="projects.html" class="active" aria-current="page"><i class="fa-solid fa-folder-open"></i> Projekty</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Kontakt</a></li>
+                    </ul>
+                </nav>
+
+                <div class="sidebar-socials">
+                    <a href="https://github.com/20kita" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/natalia-cieszy%C5%84ska-065638272" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+
+                <footer class="sidebar-footer">
+                    <p>&copy; 2026 Natalia Cieszyńska.</p>
+                </footer>
+            </aside>
+
+            <main class="main-content project-detail-main">
+                <div class="bg-shape shape-1"></div>
+                <div class="bg-shape shape-2"></div>
+
+                <header class="project-fixed-top">
+                    <div class="project-header-text">
+                        <h2>2048 - aplikacja mobilna</h2>
+                    </div>
+
+                    <div class="project-top-actions">
+                        <a href="projects.html" class="icon-btn" aria-label="Wróć do projektów" title="Wróć do projektów"><i class="fa-solid fa-arrow-left"></i></a>
+                        <a href="project-2048-en.html" class="icon-btn" hreflang="en" aria-label="English version">EN</a>
+                        <button id="theme-toggle" class="icon-btn" type="button" aria-label="Przełącz motyw">
+                            <i class="fa-solid fa-moon"></i>
+                        </button>
+                    </div>
+                </header>
+
+                <div class="project-scroll-container">
+                    <div class="project-content-body">
+
+                        <div class="project-actions">
+                            <a href="https://github.com/20kita/game-2048" target="_blank" rel="noopener noreferrer" class="cta-button small-btn">
+                                <i class="fa-brands fa-github"></i> Kod źródłowy
+                            </a>
+                        </div>
+                        <div class="screenshot-gallery">
+                            <img src="images/2048/menu.png" alt="Ekran główny gry 2048" loading="lazy" width="390" height="844">
+                            <img src="images/2048/classic.png" alt="Tryb klasyczny" loading="lazy" width="390" height="844">
+                            <img src="images/2048/halloween.png" alt="Motyw Halloween w trybie ciemnym" loading="lazy" width="390" height="844">
+                            <img src="images/2048/missions.png" alt="Ekran misji" loading="lazy" width="390" height="844">
+                        </div>
+                        <div class="project-description-card">
+                            <h3>O projekcie</h3>
+                            <p>Mobilna gra logiczna inspirowana 2048: przesuwasz kafelki i łączysz dwa takie same w kolejny. Napisałam ją w HTML, CSS i JavaScript bez żadnych frameworków, a potem zamieniłam w aplikację na Androida za pomocą Capacitora.</p>
+                            <p>Gra ma trzy darmowe tryby (Klasyczny, Zwierzęta i Owoce), 11 motywów do odblokowania, trzy rozmiary planszy (3×3, 4×4 i 5×5) oraz misje dzienne i tygodniowe, za które dostaje się diamenty. Są też płynne animacje, dźwięki tworzone w kodzie (Web Audio API), tryb jasny i ciemny, dwa języki oraz automatyczny zapis po każdym ruchu.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </main>
+
+        </div>
+    </div>
+
+</body>
+</html>

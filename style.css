@@ -419,6 +419,101 @@ body.dark-theme .tag {
     color: #EBD3F8;
 }
 
+/* ---------- Project sections (Figma, Python, ...) ---------- */
+.project-section {
+    margin-bottom: 30px;
+}
+
+.project-section .projects-grid {
+    padding-bottom: 0;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 10px 14px 0;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.section-title i {
+    color: var(--primary-color);
+}
+
+/* a thin line after the heading text */
+.section-title::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: var(--border);
+}
+
+/* ---------- Featured project (Strimdle) ---------- */
+.project-card.featured-card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    min-height: 0;
+    margin: 0 10px 30px 0;
+    padding: 24px 28px;
+    border: 2px solid var(--primary-color);
+    background: linear-gradient(135deg, var(--surface) 55%, rgba(173, 73, 225, 0.12));
+}
+
+.featured-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.featured-badge {
+    margin-bottom: 8px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+.project-card.featured-card h3 {
+    font-size: 1.5rem;
+}
+
+.project-card.featured-card p {
+    margin-bottom: 12px;
+    max-width: 640px;
+    font-size: 0.9rem;
+}
+
+.tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.featured-cta {
+    flex-shrink: 0;
+    padding: 10px 18px;
+    border-radius: 50px;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.featured-cta i {
+    margin-left: 6px;
+    transition: transform 0.3s ease;
+}
+
+.featured-card:hover .featured-cta i {
+    transform: translateX(4px);
+}
+
 /* ==========================================================
    Project + contact detail pages
    ========================================================== */
@@ -499,6 +594,41 @@ body.dark-theme .tag {
     border: none;
 }
 
+/* taller preview for phone-shaped prototypes */
+.project-iframe-wrapper.tall {
+    height: 640px;
+}
+
+/* a small heading inside a project page (e.g. "Desktop version") */
+.project-subheading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0 12px;
+    font-size: 1.05rem;
+    color: var(--text-dark);
+}
+
+.project-subheading i {
+    color: var(--primary-color);
+}
+
+/* phone screenshots (2048) */
+.screenshot-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.screenshot-gallery img {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: 0 10px 25px var(--shadow);
+}
+
 .project-description-card {
     margin-bottom: 20px;
     padding: 22px 25px;
@@ -518,6 +648,11 @@ body.dark-theme .tag {
     font-size: 0.85rem;
     line-height: 1.5;
     color: var(--text-dark);
+}
+
+/* space between paragraphs in the same card */
+.project-description-card p + p {
+    margin-top: 10px;
 }
 
 .project-description-card p a {
@@ -745,6 +880,12 @@ body.dark-theme .tag {
     .project-fixed-top { flex-wrap: wrap; padding: 20px 20px 15px; }
     .project-scroll-container { min-height: 0; padding: 0 20px 30px;}
     .project-iframe-wrapper { height: 360px; }
+    .project-iframe-wrapper.tall { height: 560px; }
+
+    .project-card.featured-card { flex-direction: column; align-items: flex-start; margin-right: 0; padding: 20px; }
+    .project-card.featured-card h3 { font-size: 1.3rem; }
+    .section-title { margin-right: 0; }
+    .screenshot-gallery { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 499px) {
     .app-container { position: relative; }
