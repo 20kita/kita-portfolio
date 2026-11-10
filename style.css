@@ -618,6 +618,7 @@ body.dark-theme .tag {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
+    max-width: 900px;   /* so phone screenshots don't get huge on wide screens */
     margin-bottom: 20px;
 }
 
