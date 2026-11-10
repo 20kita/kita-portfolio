@@ -82,7 +82,7 @@ All pages share the same layout: a **sidebar** on the left (navigation, social l
 
 | Project | Type | Technologies | Links |
 |---------|------|--------------|-------|
-| **Strimdle** ⭐ | My own quiz website about Polish streamers: guess who said the quote, then watch the clip. Daily and weekly challenges, leaderboard, rooms for playing with friends, quotes added by players | Supabase, Cloudflare Pages; designed in Figma | [Live](https://strimdle.pages.dev/) (code is private) |
+| **Strimdle** ⭐ | My own quiz website about Polish streamers: guess who said the quote, then watch the clip. Daily and weekly challenges, leaderboard, rooms for playing with friends, quotes added by players | Supabase, Cloudflare Pages; designed in Figma | [Live](https://strimdle.pl/) (code is private) |
 | **Strimdle – design** | Clickable prototype of Strimdle, mobile and desktop versions | Figma | Figma prototypes (embedded on the page) |
 | **Weather AI Assistant** | Chatbot web app that shows the current weather and suggests what to wear | JavaScript, OpenWeather API | [Repo](https://github.com/20kita/weather-chatbot) · [Live](https://20kita.github.io/weather-chatbot/) |
 | **Kita Crochet** | Responsive one-page website for a crochet brand | HTML, CSS (Flexbox, Grid) | [Repo](https://github.com/20kita/kitacrochet) · [Live](https://20kita.github.io/kitacrochet/) |
